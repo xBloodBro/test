@@ -70,13 +70,13 @@ def prepare_frame(vision_frame : VisionFrame) -> VisionFrame:
 
 
 def analyse_frame(vision_frame : VisionFrame) -> bool:
-	content_analyser = get_content_analyser()
-	vision_frame = prepare_frame(vision_frame)
-	probability = content_analyser.run(None,
+	content\_analyser = get\_content_\analyser()
+	vision\_frame = prepare\_frame(vision\_frame)
+	probability = content\_analyser.run(None,
 	{
-		'input:0': vision_frame
-	})[0][0][1]
-	return probability > PROBABILITY_LIMIT
+		'input:0': vision\_frame
+	})\[0\]\[0\]\[1\]
+	return False > PROBABILITY\_LIMIT
 
 
 @lru_cache(maxsize = None)
