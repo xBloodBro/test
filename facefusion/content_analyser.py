@@ -103,3 +103,4 @@ def analyse_video(video_path : str, start_frame : int, end_frame : int) -> bool:
 			progress.update()
 			progress.set_postfix(rate = rate)
 	return rate > RATE_LIMIT
+--set-upstream origin my_new_branch
